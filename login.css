@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif; 
+    color: white;
+}
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(https://www.mining.com/wp-content/uploads/2021/02/tesla-black-1024x576.jpeg);
+    block-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+b{
+    color: orange;
+}
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(61, 59, 59, 0.3),rgba(138, 81, 15, 0.3));
+    width: 380px;
+    padding: 29px 25px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #000;
+}
+h1{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+.control input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+}
+.control input[type="button"]{
+    background: rgb(0, 0, 0);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: .7;
+    transition: opacity .2 ease;
+    cursor: pointer;
+}
+.control input[type="button"]:hover{
+    opacity: 1;
+}
+.link{
+    text-align: center;
+}
+.link a{
+    text-decoration: none;
+    color: #fff;
+    opacity: .7;
+    transition: opacity .3s ease;
+}
+.link a:hover{
+    opacity: 1;
+}
+@media screen and (max-width: 650px){
+    section{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background: url(https://www.mining.com/wp-content/uploads/2021/02/tesla-black-1024x576.jpeg);
+        block-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    b{
+        color: orange;
+    }
+    .form-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 380px;
+        padding: 29px 25px;
+        border-radius: 10px;
+        box-shadow: 7px 7px 60px #000;
+    }
+    h1{
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+    .control input{
+        width: 100%;
+        display: block;
+        padding: 10px;
+        color: #222;
+        border: none;
+        outline: none;
+        margin: 1em 0;
+    }
+    .control input[type="button"]{
+        background: rgb(0, 0, 0);
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        opacity: .7;
+        transition: opacity .2 ease;
+        cursor: pointer;
+    }
+    .control input[type="button"]:hover{
+        opacity: 1;
+    }
+    .link{
+        text-align: center;
+    }
+    .link a{
+        text-decoration: none;
+        color: #fff;
+        opacity: .7;
+        transition: opacity .3s ease;
+    }
+    .link a:hover{
+        opacity: 1;
+}
+}

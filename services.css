@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://wallpapercave.com/wp/wp10671664.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color:white;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 30px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: orange;
+    transition: .4s;
+}
+.btn{
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+span{
+    color: orange;
+}
+.title h1{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 42px;
+}
+.title h1::after{
+    content: "";
+    height: 4px;
+    width: 230px;
+    background-color:#000;
+    display: block;
+    margin: auto;
+}
+.services{
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    background-color: #efefef;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card:hover{
+    background-color: orange;
+    transition: 0.4s ease;
+}
+.card .icon{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.card h2{
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.card p{
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #5e5e5e;
+}
+.button{
+    font-size: 15px;
+    text-decoration: none;
+    color: #ffff;
+    background-color: #0a0a0a;
+    padding: 8px 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.button:hover{
+   background-color: yellow;
+   transition: 0.4s ease;
+}
+.footer{
+    width: 100vh;
+    height: 50px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+}
+.share{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.share p{
+    font-size: 17px;
+    color: white;
+    margin: 0px 60px;
+}
+.share .social a{
+    display: inline-block;
+    color: white;
+    margin-right: 35px;
+    transition: transform .3s;
+}
+.share .social a:hover{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width:650px) {
+    .body{
+        width: 80%;
+        display: block;
+        margin:auto;
+        padding-top:50px;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 25px;
+        padding-left: 12%;
+        padding-right: 7%;
+    }
+    .logo{
+        color: white;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+    }
+    span{
+        color: orange;
+    }
+    nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 5px 15px;
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    nav ul li a:hover{
+        color: orange;
+        transition: .4s;
+    }
+    .btn{
+        background-color: orange;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 10px 25px;
+        border-radius: 20px;
+        transition: transform .4s;
+    }
+    .btn:hover{
+        transform: scale(1.1);
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 85%;
+        display: flex;
+        margin: 20px 0px;
+    }
+    .footer{
+        width: 100vh;
+        height: 50px;
+        background-color: rgb(0, 0, 0);
+    }
+    .share{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .share p{
+        font-size: 10px;
+        color: white;
+        margin: 0px 30px;
+    }
+    .share .social a{
+        display: inline-block;
+        color: white;
+        margin-right: 20px;
+        transition: transform .3s;
+    }
+    .share .social a:hover{
+        transform: scale(1.5);
+    }
+}
